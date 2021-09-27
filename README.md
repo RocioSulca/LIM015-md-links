@@ -25,18 +25,19 @@ Esta línea de comando te permite ver todos los links sin la validación.
 
 `path, --validate`
 Esta línea de comando te permite ver los datos estadísticos de los links.
-![comando validate](img/path validate.JPG)
+![comando validate](img/pathvalidate.JPG)
 
 `path, --stats`
 Esta línea de comando te permite saber cuantos links hay en total en el archivo y cuantos son unicos.
-![comando stats](img/path stats.JPG)
+![comando stats](img/pathstats.JPG)
 
 `path, --validate, --stats`
 Esta línea de comando te permite saber cuantos links hay en total en el archivo, cuantos son unicos y cuantos links rotos hay.
-![comando validate y stats](img/path validate y stats.JPG)
+![comando validate y stats](img/pathvalidatestats.JPG)
 
 `path, --help`
 Esta linea de comando es si se desea ayuda  
+![comando help](img/pathhelp.JPG)
 
 
 
