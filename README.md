@@ -13,7 +13,7 @@ También puedes importarlo con require para usarlo programáticamente : `const m
 
 ## Diagrama de flujo:
 
-El [diagrama de flujo](https://lucid.app/lucidchart/d2ff7955-7946-43b8-8880-e0b3f0337faf/edit?beaconFlowId=578F797F6F6FC472&page=51.7mHuhvyRz#) para la implementación de la solución de md-Links.
+El [diagrama de flujo](https://lucid.app/documents/view/d2ff7955-7946-43b8-8880-e0b3f0337faf) para la implementación de la solución de md-Links.
 
 ## Guia de uso:
 
