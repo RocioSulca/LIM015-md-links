@@ -21,6 +21,7 @@ El [diagrama de flujo](https://lucid.app/lucidchart/d2ff7955-7946-43b8-8880-e0b3
 
 `path`
 Esta línea de comando te permite ver todos los links sin la validación.
+![sin comando](img/path.JPG)
 
 `path, --validate`
 Esta línea de comando te permite ver los datos estadísticos de los links.
