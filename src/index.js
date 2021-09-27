@@ -2,9 +2,9 @@ const methods = require('./ruta.js');
 
 const mdLinks = (path, options) =>
     new Promise((resolve, reject) => {
-        if (path == null) {
-            reject('Ingrese la ruta');
-        } else {
+        // if (path === undefined) {
+        //     reject('Ingrese la ruta');
+        // } else {
             const absolute = methods.isAbsolute(path);
             // console.log(absolute, 'the book');
             const existPath = methods.pathExist(absolute);
@@ -38,7 +38,7 @@ const mdLinks = (path, options) =>
             } else {
                 reject('La ruta no es valida');
             }
-        }
+        
     });
 //   console.log(arg[0], 'es esto');
 // mdLinks('C:\\Users\\Rocio Sulca\\Desktop\\laboratoria\\LIM015-md-links\\Pruebaa', { validate: true }).then(resolve => {

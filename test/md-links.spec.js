@@ -40,6 +40,38 @@ const arrStatsPrueb = [
   }
 ];
 
+const arrayUnvalided = [  
+  {
+    href: 'https://developer.mozilla.org/es/docs/Web/HTTP/Messages',
+    text: 'Mensajes HTTP - MDN',
+    pathFile: 'Pruebaa\\archivo2.md'
+  }
+]
+
+const pruebita = [
+{
+  href: "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/",
+  pathFile: "Pruebaa\\archivo.md",
+  status: 200,
+  statusText: "OK",
+  text: "Array - MDN",
+},
+{
+  href: "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
+  pathFile: "Pruebaa\\archivo.md",
+  status: 200,
+  statusText: "OK",
+  text: "Array.prototype.sort() - MDN",
+},
+{
+  href: "https://www.google.com/no-existe",
+  pathFile: "Pruebaa\\archivo.md",
+  status: 404,
+  statusText: "FAIL",
+  text: "https://www.google.com/no-existe",
+}
+]
+
 const arrValidPrueb = { "0": ".", "1": "/", "10": "p", "11": "r", "12": "u", "13": "e", "14": "b", "15": "i",
   "16": "t", "17": "a", "18": "/", "19": "a", "2": "P", "20": "r", "21": "c", "22": "h", "23": "i","24": "v", 
   "25": "o", "26": "3","27": ".",  "28": "m", "29": "d",   "3": "r", "4": "u",
@@ -169,57 +201,21 @@ describe('Nos muestra enlaces totales',() => {
   });
 });
 
-
- const arrayUnvalided = [  
-    {
-      href: 'https://developer.mozilla.org/es/docs/Web/HTTP/Messages',
-      text: 'Mensajes HTTP - MDN',
-      pathFile: 'Pruebaa\\archivo2.md'
-    }
-  ]
-
-
-const pruebita = [
-  {
-    href: "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/",
-    pathFile: "Pruebaa\\archivo.md",
-    status: 200,
-    statusText: "OK",
-    text: "Array - MDN",
-  },
-  {
-    href: "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
-    pathFile: "Pruebaa\\archivo.md",
-    status: 200,
-    statusText: "OK",
-    text: "Array.prototype.sort() - MDN",
-  },
-  {
-    href: "https://www.google.com/no-existe",
-    pathFile: "Pruebaa\\archivo.md",
-    status: 404,
-    statusText: "FAIL",
-    text: "https://www.google.com/no-existe",
- }
-]
-
-
-
-  describe('Permite devolver un array con objetos de la ruta ingresada', () => {
-    it('Debería devolvernos una promesa con validacion del link', (done) => { mdLinks('Pruebaa\\archivo.md', { validate: true })
-      .then((data) => {
-        expect(data).toStrictEqual(pruebita);
-        done();
-      })});
-    it('Debería devolvernos una promesa sin la validacion del link', (done) => { mdLinks('Pruebaa\\archivo2.md', { validate: false })
-      .then((data) => {
-        expect(data).toEqual(arrayUnvalided);
-        done();
-      })});
-    it('Debería devolvernos un mensaje indicando que ingrese una ruta', (done) => { mdLinks('p')
-      .catch((error) => {
-        expect(error.message).toBe('Ruta incorrecta');
-        done();
-      })});
-
+// Test de la funcion md-links
+describe('Permite devolver un array con objetos de la ruta ingresada', () => {
+  it('Debería devolvernos una promesa con validacion del link', (done) => { mdLinks('Pruebaa\\archivo.md', { validate: true })
+    .then((data) => {
+      expect(data).toStrictEqual(pruebita);
+      done();
+    })});
+  it('Debería devolvernos una promesa sin la validacion del link', (done) => { mdLinks('Pruebaa\\archivo2.md', { validate: false })
+    .then((data) => {
+      expect(data).toEqual(arrayUnvalided);
+      done();
+    })});
+  it('Debería devolvernos un mensaje indicando que ingrese una ruta', (done) => { mdLinks('p')
+    .catch((error) => {
+      expect(error).toBe('La ruta no es valida');
+      done();
+    })});
   });

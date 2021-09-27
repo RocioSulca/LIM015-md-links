@@ -8,12 +8,9 @@ Para las pruebas unitarias utilizamos Jest.
 
 ## Instalación:
 
-Para instalar esta librería debes ejecutar la siguiente linea de comando: ***************. 
-También puedes importarlo con require para usarlo programáticamente : const mdLinks = require('md-links');
+Para instalar esta librería debes ejecutar la siguiente linea de comando: `$ npm i md-links-rocio-sulca`. 
+También puedes importarlo con require para usarlo programáticamente : `const mdLinks = require('md-links-rocio-sulca')`;
 
-```js
-.....
-```
 ## Diagrama de flujo:
 
 El [diagrama de flujo](https://lucid.app/lucidchart/d2ff7955-7946-43b8-8880-e0b3f0337faf/edit?beaconFlowId=578F797F6F6FC472&page=51.7mHuhvyRz#) para la implementación de la solución de md-Links.
