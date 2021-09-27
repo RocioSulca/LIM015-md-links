@@ -21,18 +21,24 @@ El [diagrama de flujo](https://lucid.app/lucidchart/d2ff7955-7946-43b8-8880-e0b3
 
 `path`
 Esta línea de comando te permite ver todos los links sin la validación.
+![sin comando](img/path.JPG)
 
 `path, --validate`
 Esta línea de comando te permite ver los datos estadísticos de los links.
+![comando validate](img/pathvalidate.JPG)
 
 `path, --stats`
 Esta línea de comando te permite saber cuantos links hay en total en el archivo y cuantos son unicos.
+![comando stats](img/pathstats.JPG)
 
 `path, --validate, --stats`
 Esta línea de comando te permite saber cuantos links hay en total en el archivo, cuantos son unicos y cuantos links rotos hay.
+![comando validate y stats](img/pathvalidatestats.JPG)
 
 `path, --help`
 Esta linea de comando es si se desea ayuda  
+![comando help](img/pathhelp.JPG)
+
 
 
 
